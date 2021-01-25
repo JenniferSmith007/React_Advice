@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   max-width: 100vw;
   max-height: 100vh;
-  /* background-image: url(./Component/Images/main1background.png); */
+  background-image: url(./Component/Images/main1background.png);
   background-size: cover;
 }
 * {

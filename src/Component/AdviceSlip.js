@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Advice from "./Advice";
 import axios from "axios";
 import { RANDOM_ADVICE_URL } from "../Constant";
-// import Random from "./Images/Random.png";
+import Random from "./Images/Random.png";
 function AdviceSlip() {
   const [advice, setAdvice] = useState(undefined);
 
@@ -17,6 +17,7 @@ function AdviceSlip() {
   }, []);
   return (
     <div>
+      <img className="randomlogo" src={Random} width="250" height="80" alt="" />
       <div className="random-advice">
         <Advice advice={advice} />
         <button className="random" onClick={getDataFromApi}>
