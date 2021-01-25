@@ -2,7 +2,6 @@ import { useState } from "react";
 import Advice from "./Advice";
 import axios from "axios";
 import { SEARCHED_ADVICE_URL } from "../Constant";
-import Searched from "./Images/Searched.png";
 
 function SearchedAdvice() {
   const [searchAdvice, setSearchAdvice] = useState("");
@@ -18,15 +17,7 @@ function SearchedAdvice() {
 
   return (
     <div>
-      <div className="cont">
-        <img
-          className="searchedlogo"
-          src={Searched}
-          width="250"
-          height="80"
-          alt=""
-        />
-      </div>
+      <div className="cont"></div>
       {searchedApi === undefined ? (
         ``
       ) : (
